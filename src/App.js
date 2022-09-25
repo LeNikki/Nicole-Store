@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-
+import "./Components/style/home.css"
+import "./Components/style/node.css"
+import "./Components/style/footer.css"
+import Header from "./Components/header"
+import Home from "./Components/Home"
+import Item from "./Components/node"
+import Footer from "./Components/Footer"
+import { products } from './Components/products';
 function App() {
+  const node = products.map((i)=>{
+    return <Item key={i.id} {...i}/>
+  })
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className='container'>
+      <Home/>
+      <div className='node-container'>
+        {node}
+      </div>
+      </div>
+      <Footer/>
     </div>
   );
 }

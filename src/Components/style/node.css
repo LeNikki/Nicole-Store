@@ -1,0 +1,24 @@
+.node-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100;
+    margin: 2em;
+}
+.hotPicks-item{
+    width: 20em;
+    height: 28em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prod-img{
+    width: 200px;
+    margin-top: 1rem;
+}
+.add-to-cart{
+    background-color: #5E17EB;
+}
+.add-to-cart:hover{
+    filter: brightness(40%);
+}

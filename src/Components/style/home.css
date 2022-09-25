@@ -1,0 +1,26 @@
+.home-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.welcome, .main_img{
+    width: 200px;
+    height: 210px;
+    text-align: left;
+    padding: 1rem;
+}
+.welcome button, .add-to-cart{
+    color:white;
+    width: 200px;
+    padding: 1rem;
+    border:none;
+    background-color: #5E17EB;
+}
+.welcome button:hover, .add-to-cart:hover{
+    filter: brightness(40%);
+}
+
+/*Hot Picks*/
