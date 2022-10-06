@@ -1,6 +1,72 @@
-.App {
-  text-align: center;
+
+body{
+  font-family: "Kodchasan", sans-serif; 
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
+.App{
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  padding: 0 2em 0 2em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*header component: houses 3 sections: logo, nav-bar, search*/
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2em 4em;
+}
+.n-logo{
+  width: 120px;
+}
+
+.cart_icon, .search_icon{
+  width: 23px;
+  height: 23px;
+  padding: 15px;
+}
+.cart_icon:hover, .search_icon:hover{
+  background-color: #5e17eb2a;
+  border-radius: 50%;
+  
+}
+
+/*nav-bar (2nd section)*/
+.nav-bar ul{
+  width: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-bar ul li:hover{
+  font-weight: 700;
+  color: #5E17EB;
+}
+/*search (3rd section)*/
+.search{
+  margin: 0;
+  padding: 2px 0;
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+/*search input box*/
+.search-in{
+  margin-top: 9px;
+  height: 20px;
+  padding: 0.3rem;
+  border-radius: 8px;
+  border-style: solid;
+  box-shadow: none;
+}
+
+
