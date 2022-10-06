@@ -16,9 +16,3 @@
     width: 200px;
     margin-top: 1rem;
 }
-.add-to-cart{
-    background-color: #5E17EB;
-}
-.add-to-cart:hover{
-    filter: brightness(40%);
-}
